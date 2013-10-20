@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="animated fadeIn">
+<head>
+    {{! Document Settings }}
+
+    {{! Page Meta }}
+    <meta charset="UTF-8" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=1.0.1" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <div class="inner">
+  	         <a class="subscribe-me" href="{{@blog.url}}/rss/">Subscribe via RSS</a>
+             <p class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</p>
+             <p class="poweredby">Contact: Volg mij op Twitter: <a href="http://www.twitter.com/chudepohl">@Chudepohl</a> Linkedin: <a href="http://www.linkedin.com/in/chudepohl">Chudepohl</a> of kijk op:<a href="http://www.yoso.nl">yoso.nl</a></p>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+    
+    {{! The main JavaScript file for Nerdy }}
+    <script src="/assets/js/plugins.min.js"></script>
+    <script src="/assets/js/scripts.min.js"></script>
+
+</body>
+</html>
